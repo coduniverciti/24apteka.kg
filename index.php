@@ -73,6 +73,43 @@ var slideshow=new TINY.slider.slide('slideshow',{
                 <p>700.00 Сом</p>
             </div>
         </div>
+
+        <div class="tovar">
+            <div class="tovarimg">
+                <img src="tovar_image/1.jpg">
+            </div>
+            <div class="tovar_link">
+                <h3>Назик спр/назал. флакон 10мл №1</h3>
+            </div>
+            <div class="tovar_price">
+                <p>700.00 Сом</p>
+            </div>
+        </div>
+        <div class="tovar">
+            <div class="tovarimg">
+                <img src="tovar_image/1.jpg">
+            </div>
+            <div class="tovar_link">
+                <h3>Назик спр/назал. флакон 10мл №1</h3>
+            </div>
+            <div class="tovar_price">
+                <p>700.00 Сом</p>
+            </div>
+        </div>
+        
+        
+
+        <div class="tovar">
+            <div class="tovarimg">
+                <img src="tovar_image/1.jpg">
+            </div>
+            <div class="tovar_link">
+                <h3>Назик спр/назал. флакон 10мл №1</h3>
+            </div>
+            <div class="tovar_price">
+                <p>700.00 Сом</p>
+            </div>
+        </div>
         <div class="tovar">
             <div class="tovarimg">
                 <img src="tovar_image/1.jpg">
@@ -132,10 +169,12 @@ var slideshow=new TINY.slider.slide('slideshow',{
 
 
     </div>
+
+        <div style="height: 100px;"></div>
+
     <div class="footer">
     <br>        <p>&copy;2016 г  Айыке-Фарм</p>
     </div>
 </div>
-
 </body>
 </html>
