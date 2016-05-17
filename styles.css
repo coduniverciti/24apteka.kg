@@ -22,6 +22,14 @@ html,body{
 	min-height: 100%;
 	display: table;
 }
+.main_content a{
+	text-decoration: none;
+	color: #000;
+}
+.main_content a:hover{
+	color: blue;
+	text-decoration: underline;
+}
 .menu,
 .content,
 .footer{
@@ -45,12 +53,22 @@ html,body{
 	text-align: center;
 	text-decoration: none;
 }
+.tovar_link>h3{
+	background-color: white;
+	margin-right: 10px;
+}
 .tovarimg{
 	padding: 5px;
 }
 .tovarimg img{
 	width: 170px;
 	padding: 10px;
+}
+.tovar_price>span{
+	text-align: center;
+	margin-left:60px;
+	font-weight: bold;
+	font-size: 15px; 
 }
 /*=======================================*/
 /*Стили для меню*/
