@@ -12,5 +12,4 @@ foreach ($products as $item):?>
                 <span><?=$item['price']?> Сом</span>
             </div>
         </div>
-
 <?endforeach;?>

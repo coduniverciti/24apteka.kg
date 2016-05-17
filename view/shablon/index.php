@@ -20,7 +20,7 @@
             <label><input type="submit" value='Поиск' name="tovar"></label>
         </form>
         <!--лого Корзина-->
-        <a href="#">
+        <a href="index.php?view=carzina">
             <img src="images/logo_korzina.png" class="logo_korzina">
         </a>
         <span style="position: absolute;left: 710px;font-size: 18px;color: white;top: 16px;">1</span>

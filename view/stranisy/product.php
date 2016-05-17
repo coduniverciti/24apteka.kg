@@ -19,5 +19,5 @@ $product=get_product($id);
             
         </div>
         <div style="width:100px;position: absolute; margin: 30px 0 0 300px;">
-            <a href="#" style="background-color: #0080FF;color:#fff;border-radius: 5px;padding: 5px;}">Заказать</a>
+            <a href="index.php?view=add_to_cart&id=<?=$product['id']?>" style="background-color: #0080FF;color:#fff;border-radius: 5px;padding: 5px;}">В корзину</a>
         </div>
