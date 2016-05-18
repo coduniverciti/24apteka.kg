@@ -14,13 +14,16 @@ if(!isset($_SESSION['cart']))
 if($_GET['view']==='add_to_cart'){
 	$id = $_GET['id'];
         $add_item = add_to_cart($id);
+        $_SESSION['total_items'] = total_items($_SESSION['cart']);
+        $_SESSION['total_price'] = total_price($_SESSION['cart']);
         header('Location: index.php?view=product&id='.$id);
         exit;
 }
-if($_GET['view']==='update_cart'){
+if($_GET['view']=='update_cart'){
 	update_cart();
         $_SESSION['total_items'] = total_items($_SESSION['cart']);
-        header('Location: index.php?view=cart');
+        $_SESSION['total_price'] = total_price($_SESSION['cart']);
+        header('Location: index.php?view=carzina');
 }
 
 

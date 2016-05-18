@@ -86,3 +86,25 @@ function update_cart()
         
         return $num_items;           
     }
+
+function total_price($cart)
+    {
+        $total_price = 0.0;
+        
+        db_connect();
+        
+        if(is_array($cart))
+        {
+            foreach($cart as $id => $qty)
+            {
+                $query = "SELECT price FROM tovar WHERE id='$id'";
+                $result = mysql_query($query);
+                if($result)
+                {
+                    $item_price = mysql_result($result,0,'price');
+                    $total_price = $total_price + $item_price * $qty;
+                }
+            }
+        } 
+        return $total_price;           
+    }

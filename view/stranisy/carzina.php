@@ -1,6 +1,6 @@
 <h2 style="text-align: center;margin-top: 20px;">Ваша корзина.</h2>
 <?
-if($_SESSION['cart'] != '0')
+if($_SESSION['cart'])
 {
 ?>
 <form action="index.php?view=update_cart" method="post">
@@ -24,9 +24,10 @@ if($_SESSION['cart'] != '0')
             <?endforeach;?>
             
     </table>
-    <p style="text-align: center;margin-top: 20px; font-size: 17px;">Общая сумма заказа: <span> $</span></p><br>
+    <p style="text-align: center;margin-top: 20px; font-size: 17px;">Общая сумма заказа: <span><?=number_format($_SESSION['total_price'],2);?> Сом</span></p><br>
      <p style="text-align: center;"><input type="submit" name="update" value="Обновить" /></p>
 </form>
+<p style="text-align: center;margin-top: 40px;"><a href="index.php?view=order" style="text-decoration: none;padding: 5px;border-radius: 5px;background-color: #0080FF;color: white;">Оформить заказ</a></p>
 <?
 }
 else
