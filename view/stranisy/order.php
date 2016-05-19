@@ -1,7 +1,6 @@
 <h2 style="text-align: center;margin-top: 20px;">Оформление заказа.</h2>
-
 <?
-if($_SESSION['cart'] && !isset($_POST['order']))
+if($_SESSION['cart'] && !isset($_POST['zakaz']))
 {
 ?>
 <form action="index.php?view=order" method="post">
@@ -34,11 +33,11 @@ if($_SESSION['cart'] && !isset($_POST['order']))
 				     <label>Телефон:</label><input type="text" name="telefon"><br><br>
 				     </div>
 
-     <p style="text-align: center;"><input type="submit" name="order" value="Заказать" /></p>
+     <p style="text-align: center;"><input type="submit" name="zakaz" value="Заказать" /></p>
 </form>
 <?
 }
-if($_SESSION['cart'] && isset($_POST['order'])){
+if($_SESSION['cart'] && isset($_POST['zakaz'])){
     $name =$_POST['name']; 
     $s_name =$_POST['s_name']; 
     $e_mail =$_POST['e_mail']; 
@@ -51,7 +50,7 @@ if($_SESSION['cart'] && isset($_POST['order'])){
 
     	foreach($_SESSION['cart'] as $id => $quantity):
 	    $product = get_product($id);
-	        $query = mysql_query("INSERT INTO order(name,s_name,e_mail,gorod,telefon,datee,timee,product,prod_id,price,qty) VALUES ('$name','$s_name','$e_mail','$gorod','$telefon','$date','$time','{$product['name']}','{$product['id']}','{$product['price']}','$quantity')");
+	        $query = mysql_query("INSERT INTO orderss(name,s_name,email,gorod,telefon,datee,timee,prod_name,prod_id,price,qty) VALUES ('$name','$s_name','$e_mail','$gorod','$telefon','$date','$time','{$product['name']}','{$product['id']}','{$product['price']}','$quantity')");
 	    endforeach;	
  
 			echo "<p align='center' style='color: #000; margin-top:30px; font-size:15px;'><b>Ваш заказ успешно принят! Спасибо за покупку!</b></p>";

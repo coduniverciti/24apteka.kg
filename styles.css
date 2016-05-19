@@ -176,3 +176,31 @@ html,body{
 	height: 16px;
 }
 /*====================================*/
+/*Стили для новости*/
+.news img{
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin: 10px;
+}
+.news p{
+	line-height: 25px;
+} 
+.news h3{
+	margin-left: 100px;
+	margin-top: 20px;
+}
+/*====================================*/
+/*Стили о нас*/
+.onas{
+	padding: 10px;
+}
+.onas h1,h2{
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+p{
+	color: #000;
+}
+/*====================================*/

@@ -10,12 +10,11 @@
 <div class="main_content">
     <div class="menu">
         <ul>
-            <li><a href="#">Главный</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#">О нас</a></li>
+            <li><a href="index.php">Главный</a></li>
+            <li><a href="index.php?view=news">Новости</a></li>
+            <li><a href="index.php?view=onas">О нас</a></li>
         </ul>
-        <form class="forma" action="#" method="post">
+        <form class="forma" action="index.php?view=search_prod" method="post">
             <label><input type="text" name="search_to_tovar"size='30'placeholder='Поиск'></label>
             <label><input type="submit" value='Поиск' name="tovar"></label>
         </form>
@@ -75,7 +74,7 @@ var slideshow=new TINY.slider.slide('slideshow',{
         <div style="height: 100px;"></div>
 
     <div class="footer">
-    <br>        <p>&copy;2016 г  Айыке-Фарм</p>
+    <br>        <p>&copy;2016 г  Айыке-Фарм <a href="index.php?view=about" style="color: #fff;">Обратная связь</a></p>
     </div>
 </div>
 </body>
